@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@200;300;400;500;600;700;800&family=Josefin+Sans&family=League+Gothic&family=Montserrat:wght@400;700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Quicksand&family=Raleway&family=Roboto+Mono&family=Roboto+Slab&family=Rubik:ital@0;1&family=Work+Sans:wght@800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide the default scrollbar */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(165, 165, 165);
+    border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #5e5e5e;
+}
+
+.button_here{
+    @apply px-2 rounded flex items-center justify-center relative
+}
+
+.button_text{
+    @apply transition-opacity duration-0 opacity-100 group-hover:opacity-50
+}
+
+.button_icon{
+    @apply absolute inset-0 mx-auto my-auto opacity-0 transition-opacity duration-0 group-hover:opacity-100
+}
+
+.input-field{
+    @apply p-2 w-full rounded focus:outline-none;
+}
+
+.navbar-items{
+    @apply flex items-center justify-center w-24 md:w-28 text-center h-full hover:bg-slate-400 cursor-pointer border-r border-gray-400 text-base md:text-lg
+}
+
+.logsi-btn{
+    @apply flex items-center justify-center text-base sm:text-xl md:text-2xl bg-gray-500 w-20 h-8 sm:w-24 sm:h-12 md:w-32 md:h-16 rounded cursor-pointer hover:bg-gray-400
+}
+
+.downup-btn{
+    @apply flex flex-col gap-2 items-center justify-center bg-gray-500 hover:bg-gray-400 p-5 rounded-xl w-48 h-48
+}
