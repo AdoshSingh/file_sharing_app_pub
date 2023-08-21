@@ -62,5 +62,5 @@ export const auth = getAuth(app);
 
 ## Demo
 
-Deployed Link - [https://file-nexus.onrender.com/](https://file-nexus.onrender.com/) (this may take some time)
+Deployed Link - [https://file-nexus.onrender.com/](https://file-nexus.onrender.com/) (this may take some time to load)
 
